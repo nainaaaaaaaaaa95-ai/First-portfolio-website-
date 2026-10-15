@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact-style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/portofolio">Portofolio</a></li>
+                <li><a href="/services">Service Page</a></li>
+                <li><a href="/contact-us">Contact page</a></li>
+            </ul>
+        </nav>
+  <section class="contact-container">
+    <h1>Contact Me</h1>
+    <p class="intro">Thanks for visiting! I’ll get back to you as soon as possible..</p>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <p><strong>Email:</strong> nainaredasani46@gmail.com</p>
+        <p><strong>Location:</strong> Aurangabad, India</p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+<style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #0073b1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005a8d;
+}
+.navbar{
+               background-color: black;
+               padding:10px 0;
+        }
+        .navbar ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content: center;
+        }
+        .navbar ul li{
+            margin:0 15px;
+        }
+        .navbar ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight: lighter;
+            padding:8px 16px;
+            display:block;
+        }
+        .navbar ul li a:hover{
+            background-color: #555;
+            border-radius: 5px;
+        }
+</style>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/portofolio">Portofolio</a></li>
+                <li><a href="/services">Service Page</a></li>
+                <li><a href="/contact-us">Contact page</a></li>
+            </ul>
+        </nav>
+  <section class="services">
+    <h1>My Skills</h1>
+    <p class="subtitle">Explore what I specialize in</p>
+
+    <div class="service-grid">
+      <div class="service-box">
+        <h3>Designing</h3>
+        <p>UI/UX design for modern, clean, and user-friendly interfaces using Figma.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Graphics</h3>
+        <p>Creative graphic designs for posters, logos, and social media using Canva.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Development</h3>
+        <p>Front-end development with HTML, CSS, JavaScript for responsive websites.</p>
+      </div>
+    </div>
+  </section>
+</body>
+<style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.services h1 {
+  font-size: 2.5em;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.service-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #444;
+}
+
+.service-box p {
+  font-size: 0.95em;
+  color: #666;
+}
+
+.footer-link {
+  margin-top: 50px;
+  color: #0056b3;
+  font-weight: bold;
+}
+.navbar{
+               background-color: black;
+               padding:10px 0;
+        }
+        .navbar ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content: center;
+        }
+        .navbar ul li{
+            margin:0 15px;
+        }
+        .navbar ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight: lighter;
+            padding:8px 16px;
+            display:block;
+        }
+        .navbar ul li a:hover{
+            background-color: #555;
+            border-radius: 5px;
+        }
+</style>
+</html>
